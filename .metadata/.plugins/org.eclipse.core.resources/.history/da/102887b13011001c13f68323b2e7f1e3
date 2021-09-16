@@ -1,0 +1,7 @@
+package com.barclays;
+
+public class CompanyImpl {
+	Company c = null;
+	c = Company.getInstance(c);
+	
+}

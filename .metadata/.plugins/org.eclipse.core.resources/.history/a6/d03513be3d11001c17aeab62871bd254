@@ -1,0 +1,29 @@
+package com.barclays.factory;
+
+import java.util.ResourceBundle;
+
+import com.barclays.contracts.ICustomerDAO;
+import com.barclays.contracts.IEmployeeDAO;
+import com.barclays.customer.dao.CustomerDaoJdbcImpl;
+import com.barclays.employee.dao.EmployeeDaoJdbcImpl;
+import com.dao.contracts.IProductDAO;
+
+public abstract class DaoFactory {
+	static class Holder{
+		private static DaoFactory instance = null;
+		
+		static {
+			ResourceBundle rb = ResourceBundle.getBundle("application");
+			String factoryImplClass = rb.getString("dao.factory");
+		}
+	}
+	
+	public abstract IEmployeeDAO getEmployeeDao() {
+		return new EmployeeDaoJdbcImpl();
+	}
+	public abstract ICustomerDAO getCustomerDao() {
+		return new CustomerDaoJdbcImpl();
+	}
+	public abstract IProductDAO getProductDao();
+	
+}

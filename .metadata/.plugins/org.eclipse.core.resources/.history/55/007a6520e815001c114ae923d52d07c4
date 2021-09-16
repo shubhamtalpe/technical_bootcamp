@@ -1,0 +1,21 @@
+package com.barclays.employeeservice.model;
+
+import javax.persistence.Entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+public class Employee {
+	
+	private long empId;
+	private String firstName;
+	private String lastname;
+	private float salary;
+	private String address;
+	
+}

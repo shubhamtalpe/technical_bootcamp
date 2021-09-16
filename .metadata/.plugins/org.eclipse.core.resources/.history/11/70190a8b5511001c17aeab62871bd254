@@ -1,0 +1,3 @@
+# hibernate, jpa, jdbc, mongo, dynamo
+productDao.imp=mongo
+port.num=27017

@@ -1,0 +1,33 @@
+package com.barclays.employeeservice.controller;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.barclays.employeeservice.model.Employee;
+import com.barclays.employeeservice.service.EmployeeService;
+
+@RestController
+public class EmployeeController {
+	
+	@Autowired
+	EmployeeService employeeService;
+	
+	@GetMapping("/test")
+	public String test() {
+		return "test";
+	}
+	
+	@GetMapping("/{id}")
+	public ResponseEntity<?> getEmployeeById(@PathVariable("id") long id) {
+		Optional<Employee> optional = employeeService.getEmployeeById(id); 
+		return optional.isPresent() ? 
+				ResponseEntity.status(200).body(optional.get()) :
+					ResponseEntity.notFound().build();
+	}
+	
+}

@@ -1,0 +1,45 @@
+package com.barclays.employeeservice.service;
+
+import java.util.List;
+
+import com.barclays.employeeservice.model.Employee;
+
+public class EmployeeServiceImpl implements EmployeeService{
+
+	@Override
+	public String addEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String updateEmployee(long id, Employee employee) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employee getEmployeeById(long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Employee> getEmployees() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteEmployeeById(long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteEmployees() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

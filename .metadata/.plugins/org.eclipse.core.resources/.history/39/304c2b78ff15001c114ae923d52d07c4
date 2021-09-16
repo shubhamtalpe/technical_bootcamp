@@ -1,0 +1,27 @@
+package com.barclays.employeeservice.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.barclays.employeeservice.model.Employee;
+import com.barclays.employeeservice.service.EmployeeService;
+
+@RestController
+public class EmployeeController {
+	
+	@Autowired
+	EmployeeService employeeService
+	
+	@GetMapping("/test")
+	public String test() {
+		return "test";
+	}
+	
+	@GetMapping("/{id}")
+	public Employee getEmployeeById(@PathVariable("id") long id) {
+		return new Employee(id, "", "", 0, "");
+	}
+	
+}

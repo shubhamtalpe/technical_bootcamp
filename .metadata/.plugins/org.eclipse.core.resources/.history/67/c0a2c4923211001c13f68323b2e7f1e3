@@ -1,0 +1,14 @@
+package com.barclays;
+
+public class EagerSingleton {
+	private static final EagerSingleton instance = new EagerSingleton();
+	
+	private EagerSingleton() {
+		// TODO Auto-generated constructor stub
+		System.out.println("Constructor of EagerSingleton");
+	}
+	
+	public static EagerSingleton getInstance() {
+		return instance;
+	}
+}

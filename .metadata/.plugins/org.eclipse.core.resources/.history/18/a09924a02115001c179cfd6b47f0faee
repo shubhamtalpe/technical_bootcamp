@@ -1,0 +1,9 @@
+package com.barclays.testingdemo.test;
+
+public class ContactManagerTest {
+
+	public void shouldCreateContact() {
+		
+	}
+	
+}

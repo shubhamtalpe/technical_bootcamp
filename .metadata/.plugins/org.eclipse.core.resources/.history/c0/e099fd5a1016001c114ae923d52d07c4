@@ -1,0 +1,46 @@
+package com.barclays.departmentservice.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import com.barclays.departmentservice.model.Department;
+
+public class DepartmentServiceImpl implements DepartmentService {
+
+	@Override
+	public String addDepartment(Department department) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String updateDepartment(long deptId, Department department) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Optional<Department> getDepartmentById(long deptId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Department> getDepartments() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteDepartmentById(long deptId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteDepartments() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

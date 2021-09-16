@@ -1,0 +1,7 @@
+package com.barclays.contracts;
+
+public interface IShoppingCart {
+	void addItem(Item item);
+	void removeItem(Item item);
+	int calculateTotal();
+}
