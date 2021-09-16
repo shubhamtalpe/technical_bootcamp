@@ -1,0 +1,8 @@
+package com.barclays.builder;
+
+public class EmployeeBuilder {
+	private int empId;
+	private String empName;
+	private String empEmail;
+	private double empSal;
+}

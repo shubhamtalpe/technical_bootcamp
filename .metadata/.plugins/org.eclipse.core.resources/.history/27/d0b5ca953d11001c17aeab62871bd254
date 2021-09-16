@@ -1,0 +1,14 @@
+package com.barclays.factory;
+
+import java.util.ResourceBundle;
+
+public abstract class DaoFactory {
+	static class Holder{
+		private static DaoFactory instance = null;
+		
+		static {
+			ResourceBundle rb = ResourceBundle.getBundle("application");
+			String factoryImplClass = rb.getString("dao.factory");
+		}
+	}
+}

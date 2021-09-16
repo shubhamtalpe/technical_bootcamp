@@ -1,0 +1,16 @@
+package com.barclays.testingdemo.test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+public class ContactManagerTest {
+
+	@Test
+	@DisplayName("Should create a contact")
+	public void shouldCreateContact() {
+		assertEquals(1, 1);
+	}
+	
+}

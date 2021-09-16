@@ -1,0 +1,39 @@
+package com.dao.impl;
+
+import java.net.UnknownHostException;
+import java.util.List;
+
+import com.dao.contracts.IProductDAO;
+import com.mongodb.DB;
+import com.mongodb.MongoClient;
+
+public class MongoProductDAO implements IProductDAO{
+	
+	public MongoProductDAO() {
+		MongoClient mongoClient;
+		try {
+			mongoClient = new MongoClient("localhost", 27017);
+		
+		List<String> dbs = mongoClient.getDatabaseNames();
+		System.out.println(dbs);
+		DB db = mongoClient.getDB("training");
+		
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void save() {
+		// TODO Auto-generated method stub
+		System.out.println("Mongo save");
+	}
+
+	@Override
+	public void delete() {
+		// TODO Auto-generated method stub
+		System.out.println("Mongo delete");
+	}
+
+}

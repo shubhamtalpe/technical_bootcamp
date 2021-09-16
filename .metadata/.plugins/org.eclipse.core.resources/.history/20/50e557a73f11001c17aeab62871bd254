@@ -1,0 +1,2 @@
+# JdbcDaoFactory / JpaDaoFactory
+dao.factory=JDBCDaoFactory

@@ -1,0 +1,10 @@
+package com.barclays.employeeservice.model;
+
+public class Employee {
+	
+	private long empId;
+	private String firstName;
+	private String lastname;
+	private float salary;
+	private String address;
+}

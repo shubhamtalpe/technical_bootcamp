@@ -1,0 +1,9 @@
+package com.barclays.impl;
+
+import com.barclays.entity.Employee;
+
+public class App {
+	public static void main(String[] args) {
+		Employee emp = new Employee(1001, "Shubham", "shubham@exmpl.com", 12345);
+	}
+}

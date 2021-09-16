@@ -1,0 +1,16 @@
+package com.barclays.employeeservice.service;
+
+import java.util.List;
+
+import com.barclays.employeeservice.model.Employee;
+
+public interface EmployeeService {
+
+	public String addEmployee(Employee employee);
+	public String updateEmployee(long id, Employee employee);
+	public Employee getEmployeeById(long id);
+	public List<Employee> getEmployees();
+	public void deleteEmployeeById(long id);
+	public void deleteEmployees();
+	
+}

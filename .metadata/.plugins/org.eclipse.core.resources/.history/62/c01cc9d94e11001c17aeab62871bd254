@@ -1,0 +1,9 @@
+package com.barclays.shopping.payments;
+
+import com.barclays.contracts.PaymentStrategy;
+
+public class BestPayment {
+	public PaymentStrategy bestPay(String ... args) {
+		
+	}
+}
